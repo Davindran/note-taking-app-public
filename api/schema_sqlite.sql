@@ -1,0 +1,11 @@
+CREATE TABLE `notes` (
+  `id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+  `content` TEXT
+);
+
+CREATE TABLE `tags` (
+  `id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+  `tag` TEXT,
+  `note_id` INTEGER,
+  FOREIGN KEY(note_id) REFERENCES notes(id)
+);
