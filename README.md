@@ -26,7 +26,7 @@ To run this application, you will need [Python 3](https://www.python.org/downloa
 
 Clone this repository:
 
-`git clone https://github.com/Davindran/note-taking-app.git`
+`git clone https://github.com/Davindran/note-taking-app-public.git`
 
 Install the Python Flask dependencies by simply executing in the project directory:
 
@@ -36,11 +36,13 @@ Change directory into the `api` folder and start the backend Flask application:
 
 `cd api`
 
-`python3 app.py`
+`python3 api.py`
 
-Open a new terminal, change directory into the `frontend` folder and start the frontend React application:
+Open a new terminal, change directory into the `frontend` folder, install necessary Node packages and start the frontend React application:
 
 `cd frontend`
+
+`npm install`
 
 `yarn start`
 
@@ -49,3 +51,7 @@ Visit `localhost:3000` on your web browser to start using the app. Alternatively
 On the left hand, you can use the form to add new notes, including a button `Add Tag` to add tags one by one. The tags are displayed below the input text with the option to be deleted. On the bottom of the form,  `Cancel` will delete all the values in the form, including the tags and `Add Note` will create a new note in the backend.
 
 The right hand side displays a list of all the notes inside the system, including their tags; each tag is clickable and will filter the list of notes by that particular tag (i.e., If I click on the `work` tag it should show me all notes tagged with the `work` tag). The `Delete` button will delete the note.
+
+## Screenshots
+![image](https://user-images.githubusercontent.com/35762857/187021720-d987c3a5-c99d-486e-8f54-4848c2f54206.png)
+![image](https://user-images.githubusercontent.com/35762857/187021773-e7954e7b-6513-49d7-aff1-9c8ed8c27595.png)
